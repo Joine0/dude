@@ -198,7 +198,7 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
 
-const adminprefix = "$vip";
+const adminprefix = "$";
 const devs = ['274923685985386496'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
@@ -237,7 +237,10 @@ ${prefix}vol ⇏ لتغيير درجة الصوت 100 - 0
 ${prefix}stop ⇏ لإخرآج البوت من الروم
 ${prefix}np ⇏ لمعرفة الأغنية المشغلة حآليا
 ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
-
+${prefix}setname ⇏ لتغيير أسم البوت
+${prefix}setavatar ⇏ لتغيير صورة البوت
+${prefix}setgame ⇏ لتغيير بلاينق البوت
+${prefix}setT ⇏ لتغيير تويتش البوت
  `)
  
    message.channel.sendEmbed(embed)
