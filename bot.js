@@ -210,7 +210,7 @@ if (message.content.startsWith(adminprefix + 'setgame')) {
 } else 
   if (message.content.startsWith(adminprefix + 'setname')) {
 client.user.setUsername(argresult).then
-    message.channel.sendMessage(`**${argresult}** : تم تغيير أسم البوت إلى`)return;
+    message.channel.sendMessage(`**${argresult}** : تم تغيير أسم البوت إلى`);
   } else
   if (message.content.startsWith(adminprefix + 'setavatar')) {
 client.user.setAvatar(argresult);
